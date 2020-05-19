@@ -2,8 +2,8 @@ struct Pair
 {
     char *key;
     void *value;
-    struct  Pair *Next;
-}; 
+    struct  Pair *next;
+};
 typedef struct Pair Pair;
 struct DictionaryNode
 {
