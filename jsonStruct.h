@@ -1,8 +1,13 @@
-struct Dictionary
+struct Pair
 {
-int size;
-void *key[10];
-void *value[10];
-	 
+    char *key;
+    void *value;
+    struct  Pair *Next;
+}; 
+typedef struct Pair Pair;
+struct DictionaryNode
+{
+    int size;
+    Pair *ptr;
 };
 
